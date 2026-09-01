@@ -11,7 +11,7 @@ RECOMP_CALLBACK("*", dk64recomp_every_frame) void unlock_extras_menu(void) {
     setFlag(i, TRUE, FLAG_TYPE_PERMANENT);
     }
     for (int i=0x1CD; i<=0x1D4; i++){
-    setFlag(i, TRUE, FLAG_TYPE_PERMANENT;
+    setFlag(i, TRUE, FLAG_TYPE_PERMANENT);
     }
     for (int i=0x182; i<=0x185; i++){
     setFlag(i, TRUE, FLAG_TYPE_PERMANENT);
