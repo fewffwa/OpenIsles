@@ -1,6 +1,6 @@
 # OpenIsles
 
-Unlock Mystery Menu is a mod for Donkey Kong 64: That unlocks the mystery menu and all of its options by default
+Open Isles is a mod for Donkey Kong 64 Recompiled that unlocks all Kongs and abilties without unlocking any collectables.
 ## Installation
 1. Download the latest `OpenIsles.nrm` from Releases.
 2. Put the file in your DK64 Recompiled mods folder.
