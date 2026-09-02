@@ -8,7 +8,7 @@
 extern PlayerProgress D_global_asm_807FC950;
 void setFlag(s16 flagIndex, u8 newValue, u8 flagType);
 
-RECOMP_CALLBACK("*", dk64recomp_every_frame) void OpenIsles(void) {
+RECOMP_CALLBACK("*", recomp_on_new_file_start) void OpenIsles(void) {
     for (int i=0x1BB; i<=0x1C3; i++){
     setFlag(i, TRUE, FLAG_TYPE_PERMANENT);
     }

@@ -7,7 +7,7 @@ description =  "Fully unlocks every level, kong, and move in the game without un
 short_description = "Fully unlocks every level, kong, and move in the game."
 authors = [ "Fewffwa" ]
 game_id = "dk64"
-minimum_recomp_version = "1.0.0"
+minimum_recomp_version = "1.0.2"
 
 # Inputs to the mod tool.
 [inputs]
