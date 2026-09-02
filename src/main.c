@@ -15,7 +15,10 @@ RECOMP_CALLBACK("*", recomp_on_new_file_start) void OpenIsles(void) {
     for (int i=0x1CD; i<=0x1D4; i++){
     setFlag(i, TRUE, FLAG_TYPE_PERMANENT);
     }
-    for (int i=0x182; i<=0x185; i++){
+    for (int i=0x17E; i<=0x18C; i++){
+    setFlag(i, TRUE, FLAG_TYPE_PERMANENT);
+    }
+    for (int i=0x167; i<=0x17A; i++){
     setFlag(i, TRUE, FLAG_TYPE_PERMANENT);
     }
         setFlag(0x6, TRUE, FLAG_TYPE_PERMANENT);
@@ -28,5 +31,7 @@ RECOMP_CALLBACK("*", recomp_on_new_file_start) void OpenIsles(void) {
         D_global_asm_807FC950.character_progress[i].moves = 3;
         D_global_asm_807FC950.character_progress[i].simian_slam = 3;
         D_global_asm_807FC950.character_progress[i].instrument = 15;
+        D_global_asm_807FC950.melons = 3;
+        D_global_asm_807FC950.health = 12;
         }
         }
