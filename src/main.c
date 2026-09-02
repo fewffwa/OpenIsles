@@ -2,11 +2,13 @@
 #include "ultra64.h"
 #include "enums.h"
 #include "common_structs.h"
+#include "recomputils.h"
+#include "Player_Progress_Structs.h"
 
-extern Maps current_map;
+extern PlayerProgress D_global_asm_807FC950;
 void setFlag(s16 flagIndex, u8 newValue, u8 flagType);
 
-RECOMP_CALLBACK("*", dk64recomp_every_frame) void unlock_extras_menu(void) {
+RECOMP_CALLBACK("*", dk64recomp_every_frame) void OpenIsles(void) {
     for (int i=0x1BB; i<=0x1C3; i++){
     setFlag(i, TRUE, FLAG_TYPE_PERMANENT);
     }
@@ -21,4 +23,10 @@ RECOMP_CALLBACK("*", dk64recomp_every_frame) void unlock_extras_menu(void) {
         setFlag(0x46, TRUE, FLAG_TYPE_PERMANENT);
         setFlag(0x75, TRUE, FLAG_TYPE_PERMANENT);
         setFlag(0x179, TRUE, FLAG_TYPE_PERMANENT);
-}
+           for (int i=0; i<=4; i++){
+        D_global_asm_807FC950.character_progress[i].weapon = 7;
+        D_global_asm_807FC950.character_progress[i].moves = 3;
+        D_global_asm_807FC950.character_progress[i].simian_slam = 3;
+        D_global_asm_807FC950.character_progress[i].instrument = 15;
+        }
+        }

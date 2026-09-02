@@ -12,7 +12,7 @@ minimum_recomp_version = "1.0.0"
 # Inputs to the mod tool.
 [inputs]
 elf_path = "build/mod.elf"
-mod_filename = "unlock_mystery_menu"
+mod_filename = "OpenIsles"
 func_reference_syms_file = "Dk64Syms/dump.toml"
 data_reference_syms_files = [ "Dk64Syms/data_dump.toml" ]
 additional_files = ["thumb.dds"]
