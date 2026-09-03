@@ -1,7 +1,7 @@
 # Fields that end up in the mod's manifest.
 [manifest]
 id = "OpenIsles"
-version = "1.0.2"
+version = "1.0.3"
 display_name = "OpenIsles"
 description =  "Fully unlocks every level, kong, and move in the game without unlocking any collectables."
 short_description = "Fully unlocks every level, kong, and move in the game."
